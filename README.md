@@ -1,10 +1,6 @@
 # 📧 Cold Mail Generator
+Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
 
-Cold email generator for services companies using **GROQ**, **LangChain**, and **Streamlit**.
-
-This tool allows users to input the URL of a company’s careers page. It then extracts job listings from that page and generates **personalized cold emails**, including relevant portfolio links sourced from a **vector database**, based on the extracted job descriptions.
-
----
 **Imagine a scenario:**
 
 - Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
@@ -15,21 +11,17 @@ This tool allows users to input the URL of a company’s careers page. It then e
 ## Architecture Diagram
 ![img.png](imgs/architecture.png)
 
+## Set-up
+1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
 
----
 
-## ⚙️ Setup Instructions
-
-1. **Get your GROQ API key**  
-   - Visit: [https://console.groq.com/keys](https://console.groq.com/keys)  
-   - Create an API key and add it to your `.env` file located inside the `app/` directory:
-     ```
-     GROQ_API_KEY=your_api_key_here
-     ```
-
-2. **Install dependencies**  
-   ```bash
-   pip install -r requirements.txt
-
-3. Run the Streamlit app
-   - streamlit run app/main.py
+2. To get started, first install the dependencies using:
+    ```commandline
+     pip install -r requirements.txt
+    ```
+   
+3. Run the streamlit app:
+   ```commandline
+   streamlit run app/main.py
+   ```
+   
